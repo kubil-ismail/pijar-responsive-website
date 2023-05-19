@@ -13,12 +13,18 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link href="./style/home.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- start of header -->
     <header>
       <nav class="container mt-4">
-        <div class="row">
+        <div class="row animate__animated animate__fadeInDown">
           <div class="col-10">
             <div>
               <a class="text-primary fw-bold" href="/index.html">Home</a>
@@ -47,9 +53,46 @@
         </div>
       </nav>
 
+      <div
+        class="mt-2 d-flex justify-content-between align-items-center hide-desktop"
+      >
+        <img src="./logo.png" width="70px" height="70px" />
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          <img src="./menu.png" width="35px" height="35px" />
+        </button>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <a
+            class="text-primary fw-bold mb-3 mt-3 text-center"
+            href="/index.html"
+            >Home</a
+          >
+          <a
+            class="text-primary fw-bold text-decoration-none mb-3 text-center"
+            href="/add.html"
+            >Add Recipe</a
+          >
+          <a
+            class="text-primary fw-bold text-decoration-none mb-3 text-center"
+            href="/profile.html"
+            >Profile</a
+          >
+        </div>
+      </div>
+
       <div class="container">
         <div class="row align-items-center" style="height: 90vh">
-          <div class="col-7">
+          <div
+            class="col-md-7 col-xs-12 order-2 order-md-1 animate__animated animate__fadeInLeft"
+          >
             <h1 class="text-primary">
               Discover Recipe & <br />
               Delicious Food
@@ -62,12 +105,13 @@
               />
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-md-5 col-xs-12 order-1 order-md-2">
             <img
               src="./home.png"
               width="500px"
               height="500px"
               style="z-index: 1"
+              class="animate__animated animate__fadeIn header-image"
             />
           </div>
         </div>
@@ -75,12 +119,14 @@
 
       <div class="bg_yellow"></div>
     </header>
+    <!-- end of header -->
 
+    <!-- start of new recipe -->
     <section id="new-recipe">
       <div class="container">
         <h2 class="mb-5 subtitle">New Recipe</h2>
         <div class="row align-items-center" style="margin-top: 100px">
-          <div class="col-6">
+          <div class="col-md-6 col-xs-12">
             <img
               src="./home.png"
               width="500px"
@@ -88,7 +134,7 @@
               style="z-index: 1"
             />
           </div>
-          <div class="col-5">
+          <div class="col-md-5 col-xs-12">
             <h3>Healthy Bone Broth Ramen (Quick & Easy)</h3>
             <hr style="width: 20%" />
             <p class="text-muted">
@@ -101,7 +147,85 @@
       </div>
       <div class="bg_yellow_2"></div>
     </section>
+    <!-- end of new recipe -->
 
+    <!-- start of popular recipe -->
+    <section id="popular-recipe">
+      <div class="container">
+        <h2 class="mb-5 subtitle">Popular Recipe</h2>
+
+        <div class="row">
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div
+              class="menu-background"
+              style="background-image: url('/image/manu-cakalang.webp')"
+            >
+              <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                Chiken Kare
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div
+              class="menu-background"
+              style="background-image: url('/image/menu-telor.webp')"
+            >
+              <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                Chiken Kare
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div
+              class="menu-background"
+              style="background-image: url('/image/menu-cumi.webp')"
+            >
+              <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                Chiken Kare
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div
+              class="menu-background"
+              style="background-image: url('/image/menu-cumi.webp')"
+            >
+              <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                Chiken Kare
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div
+              class="menu-background"
+              style="background-image: url('/image/menu-cumi.webp')"
+            >
+              <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                Chiken Kare
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div
+              class="menu-background"
+              style="background-image: url('/image/menu-cumi.webp')"
+            >
+              <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                Chiken Kare
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of popular recipe -->
+
+    <!-- start of footer -->
     <footer style="position: relative">
       <div>
         <h2 class="text-primary text-center">Eat, Cook, Repeat</h2>
@@ -115,6 +239,7 @@
         <a href="https://github.com/kubil-ismail">Bilkis Ismail</a>
       </p>
     </footer>
+    <!-- end of footer -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
